@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './Router/Router';
+import { useEffect, useState } from 'react';
+import logo from '../../khsc-website/src/images/khsc-logo.png'
 
 function App() {
+  const [loading,setLoading] = useState(false)
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+      setLoading(false);
+    },1000)
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='max-w-[1440px] mx-auto'>
+      {
+        loading ? 
+        <div className='flex justify-center mt-60'>
+          <div>
+          {/* <p className='text-blue-400 text-2xl font-bold mb-5 ml-4'>KHSC</p> */}
+          <img className='h-1/2 ml-20' src={logo} alt="" />
+          <progress className="progress w-56"></progress>
+          </div>
+        </div>
+        :
+        <RouterProvider router={router} />
+      }
     </div>
   );
 }
