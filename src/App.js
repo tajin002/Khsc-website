@@ -13,7 +13,7 @@ function App() {
     },6000)
   },[])
   return (
-    <div className='max-w-[1440px] mx-auto'>
+    <div className='max-w-[1440px] mx-auto bg-blue-300'>
       {
         loading ? 
         <div className='flex justify-center mt-60'>
