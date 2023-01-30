@@ -2,7 +2,7 @@ import './App.css';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './Router/Router';
 import { useEffect, useState } from 'react';
-import logo from 'images/khsc-logo'
+import logo from './images/khsc-logo.png'
 
 function App() {
   const [loading,setLoading] = useState(false)
