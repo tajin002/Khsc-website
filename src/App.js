@@ -21,7 +21,6 @@ function App() {
           {/* <p className='text-blue-400 text-2xl font-bold mb-5 ml-4'>KHSC</p> */}
           <img className='h-1/2 ml-20' src={logo} alt="" />
           <progress className="progress w-56"></progress>
-          <h1 className='text-amber-300'>hello</h1>
           </div>
         </div>
         :
