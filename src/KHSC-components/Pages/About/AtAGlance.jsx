@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTitle } from '../../../Hooks/UseTitle';
 
 const AtAGlance = () => {
+    useTitle('At A Glance')
     return (
         <div className='mb-10'>
             <h1 className='text-3xl lg:text-5xl text-center text-gray-600 mt-5 font-bold'>কুর্মিটোলা হাই স্কুল এন্ড কলেজ পরিচিতি</h1>

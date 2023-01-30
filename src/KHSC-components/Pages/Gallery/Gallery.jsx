@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useTitle } from '../../../Hooks/UseTitle';
 import Images from './Images';
 
 const Gallery = () => {
+    useTitle("Gallery");
     const [images, setImage] = useState([]);
     useEffect(()=>{
         fetch('photo.json')

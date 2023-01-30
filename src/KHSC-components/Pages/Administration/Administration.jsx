@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTitle } from '../../../Hooks/UseTitle';
 
 const Administration = () => {
+    useTitle('Administration');
     return (
         <div className='mt-10'>
             <h1 className='text-2xl text-center text-blue-400 font-semibold mt-5'>Administration of KHSC</h1>

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTitle } from '../../../Hooks/UseTitle';
 
 const GoverningBody = () => {
+    useTitle('Governing Body')
     return (
         <div>
             <h1 className='text-4xl text-blue-400 text-center font-semibold mt-5'>Governing Body Of Kurmitola High School & College</h1>

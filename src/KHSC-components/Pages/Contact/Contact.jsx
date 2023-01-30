@@ -1,7 +1,8 @@
 import React from 'react';
+import { useTitle } from '../../../Hooks/UseTitle';
 
 const Contact = () => {
-    
+    useTitle('Contact');
     return (
         <div>
             <h1 className='text-4xl text-gray-500 text-center font-semibold mt-10'>Kurmitola High School and College</h1>
